@@ -1,0 +1,4 @@
+﻿Business requirements for v2
+
+
+For v2, we need to add support for multiple playlists per user and multiple account types. To achieve this, we can add a new table called "playlists" with columns for playlist ID, user ID (foreign key to the users table), playlist name, and a column for the order/rank of each song in the playlist. We can also add a new table called "account_types" with columns for type ID and type name, and update the users table to have a foreign key to this new table. To migrate the v1 schema to v2, we can use a series of ALTER TABLE statements to add the necessary columns and foreign keys.
